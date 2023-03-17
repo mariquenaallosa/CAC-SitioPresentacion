@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #1f2029;
+    height: 100vh;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    perspective: 800px;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100%;
+    background-position: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../images/fondo-banner.webp");
+}
+
+header .container-nav {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin-top: 3rem;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    font-weight: 600;
+    font-size: 1.4em;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 1.7em;
+    line-height: 3em;
+}
+
+
+
+nav ul a {
+    color: #fff;
+}
+
+nav ul a:hover {
+    color:#2C74B3;
+}
+
+header h1 {
+    line-height: 1;
+    font-size: 115px;
+    color: #F3EEE9;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Inicio */
+
+section#inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.descripcion-inicio {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.descripcion {
+    width: 600px;
+
+}
+
+section div.descripcion h2 {
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 115px;
+    font-weight: 800;
+}
+
+section div.descripcion p {
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+section div.img-container {
+    height: 100%;
+    width: 80%;
+}
+
+div.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* Audiovisual */
+section#audiovisual {
+    padding-top: 3.5em;
+    background-color: #f4f4f4
+}
+
+section div.contenedor-seccion h2 {
+    font-size: 2.4em;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    color: #1f2029;
+    font-size: 115px;
+    font-weight: 800;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 400px));
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+    padding: 1em;
+    justify-content: space-around;
+}
+
+.galeria .box {
+    background-color: #CCC;
+    width: 450px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria video {
+    width: 100%;
+}
+
+/*Contacto - título*/
+#contacto {
+    padding-top: 0.3em;
+    padding-bottom: 1.70em;
+    margin-left: 70px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto h2 {
+    font-size: 115px;
+    color: #F3EEE9;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/*Contacto-formulario*/
+#contacto form {
+    margin: auto 0;
+    margin-top: 0.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contacto input {
+    padding: 10px;
+    margin: 15px;
+    margin-left: 270px;
+    display: inline-block;
+    border-radius: 13px;
+    border-color: #F3EEE9;
+}
+
+#contacto #nombre {
+    height: 62px;
+    width: 872px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#contacto #email {
+    height: 62px;
+    width: 872px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#contacto #mensaje {
+    height: 130px;
+    width: 872px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 270px;
+    display: inline-block;
+    border-radius: 13px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-width: 2px;
+    border-color: #F3EEE9;
+}
+
+#contacto #enviar {
+    width: 872px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #F3EEE9;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-left: 268px;
+    border-radius: 13px;
+    transition: all 0.4s ease;
+}
+
+#contacto #enviar:hover {
+    color: #F3EEE9;
+    background-color: #2C74B3;
+
+}
+
+/* footer */
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f4f4f4;
+    text-align: center;
+    color: #1f2029;
+}
+
+.icons {
+    padding-top: 0.9rem;
+}
+
+.icons a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin: 0.5rem;
+    color: #1f2029;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}

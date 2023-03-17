@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariquena Allosa</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li> <a href=""></a> </li>
-                <li><a href=""></a></li>
-                <li> <a href=""></a> </li>
-                <li><a href=""></a> </li>
-                <li> <a href=""></a> </li>
-            </ul>
-        </nav>
+        <div class="container-nav">
+            <h1>Mariquena Allosa</h1>
+            <nav>
+                <ul>
+                    <a href="#inicio">
+                        <li> Sobre mi </li>
+                    </a>
+                    <a href="#audiovisual">
+                        <li> Audiovisual </li>
+                    </a>
+                    <a href="#contacto">
+                        <li> Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer>
+        <section id="inicio">
+            <div class="descripcion-inicio">
 
+                <div class="descripcion">
+                    <h2>Sobre mí</h2>
+                    <p> ¡Hola! Mi nombre es Mariquena Allosa, tengo 26 años, vivo en Misiones, Argentina.
+
+                    </p>
+                    <p>Empecé mi trayectoria laboral como Realizadora Audiovisual hace 5 años, de manera freelance
+                        aunque hoy en día trabajo en una productora audiovisual.
+                    </p>
+                    <p>Actualmente me encuentro en un
+                        cambio de área y cursando la Tecnicatura en Desarrollo Web y aplicaciones digitales en el ISPC.
+                        Me apasiona la tecnología, la programación y la fotografía.</p>
+
+                    <p>
+
+                        Me considero una persona autodidacta y organizada. Asumo mis trabajos con compromiso y
+                        dedicación. Me destaco en mi empeño y perseverancia por conseguir los mejores resultados.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="img-container">
+                <img src="src/images/profilePhoto.webp" alt="">
+            </div>
+        </section>
+        <section id="audiovisual">
+            <div class="contenedor-seccion">
+                <h2>Audiovisual</h2>
+                <p></p>
+            </div>
+            <div class="galeria">
+                <div class="box"><img src="src/images/audiovisual/caricatura-club.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/caricatura-club2.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/caricatura-nico.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/ses-oriana.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/ses-oriana2.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/ses-oriana3.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/eventos-ava.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/randf-comida.webp" alt=""></div>
+                <div class="box"><img src="src/images/audiovisual/circus-mic.webp" alt=""></div>
+
+                <video src="src/images/audiovisual/DRONE DIVISION 01.mp4" controls loop></video>
+
+                <video src="src/images/audiovisual/DRONE DIVISION 02.mp4" controls loop></video>
+                <video src="src/images/audiovisual/DANI Y GABI MUESTRA.mp4" controls loop></video>
+            </div>
+
+        </section>
+
+        <section id="contacto">
+            <div>
+                <h2>Contacto</h2>
+            </div>
+            <div>
+                <form>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="text" name="email" id="email" placeholder="Correo electrónico" />
+                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="icons">
+            <p class="name">
+                Desarrollador por Mariquena Allosa <a href="https://www.linkedin.com/in/mariquenaallosa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mariquenaallosa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/mariquenaallosa" target="_blank"><i class="fab fa-github"></i></a>
+            </p>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>
